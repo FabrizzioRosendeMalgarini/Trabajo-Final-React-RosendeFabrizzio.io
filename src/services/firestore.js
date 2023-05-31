@@ -1,3 +1,19 @@
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+
+const firebaseConfig = {
+apiKey: "AIzaSyANLMqQ1bYzpGMn_-3YbC5M6k4D2OJRi7s",
+authDomain: "ractecomercefabrizziorosende.firebaseapp.com",
+projectId: "ractecomercefabrizziorosende",
+storageBucket: "ractecomercefabrizziorosende.appspot.com",
+messagingSenderId: "1016628017053",
+appId: "1:1016628017053:web:ee705ca429a3db5de36174"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+export async function exportData() 
 const data = {
     status: "success",
     items: [
